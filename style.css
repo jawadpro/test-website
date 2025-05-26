@@ -1,0 +1,159 @@
+
+body{
+    background-color: #1D1D1D;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+    width: 100%;
+}
+
+.logo img
+{
+    max-width: 99px;
+}
+
+.wrapper
+{
+    max-width: 1440px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.content
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 25px;
+}
+
+.content h1
+{
+    font-size: 80px;
+    font-weight:300;
+    line-height: 90%;
+    background: #AB4666;
+     background: -webkit-linear-gradient(left, #F8C2D3 10%,#AB4666 50%, #F8C2D3 60% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    background-size: 800px 200px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-name: animationgradienttitle;
+          animation-name: animationgradienttitle;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+-webkit-animation-timing-function: linear;
+  
+
+}
+
+.content h3
+{
+    font-size: 30px;
+    font-weight:400;
+    color: #F8C2D3;
+    margin: 0;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 88px;
+    width: 100%;
+}
+
+.footer .button
+{
+    width: 120px;
+    height: 34px;
+    background-color: #fff;
+    display: block;
+    border-radius: 52.5px;
+    text-align: center;
+    line-height: 34px;
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    transition: .1s background-color ease-in-out;
+}
+
+.footer .button:hover
+{
+    color:#fff;
+    background-color: #000;
+}
+
+
+/* Animation */
+
+@-webkit-keyframes animationgradienttitle {
+  0% {
+    background-position: 0 800px;
+  }
+  100% {
+    background-position: 800px 0;
+  }
+}
+
+/* Mobile Style */
+
+@media screen and (max-width:480px) {
+
+    .logo
+    {
+        justify-content:left;
+    }
+
+    .content
+    {
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .content h1
+    {
+        font-size: 40px;
+        text-align: left;
+        margin-top: 77px;
+    }
+
+
+    .content h3
+    {
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .footer .button
+    {
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        font-size: 20px;
+    }
+}
