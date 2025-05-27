@@ -49,24 +49,13 @@ body{
     font-weight:300;
     line-height: 90%;
     background: #AB4666;
-     background: -webkit-linear-gradient(left, #F8C2D3 10%,#AB4666 50%, #F8C2D3 60% );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    background-size: 800px 200px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
-  -webkit-animation-name: animationgradienttitle;
-          animation-name: animationgradienttitle;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
--webkit-animation-timing-function: linear;
-  
-
+         background: linear-gradient(270deg, #AB4666, #F8C2D3, #AB4666);
+      background-size: 800px auto;
+      background-position: right center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: moveGradient 4s linear infinite;
 }
 
 .content h3
@@ -109,14 +98,14 @@ body{
 
 /* Animation */
 
-@-webkit-keyframes animationgradienttitle {
-  0% {
-    background-position: 0 800px;
-  }
-  100% {
-    background-position: 800px 0;
-  }
-}
+ @keyframes moveGradient {
+      0% {
+        background-position: 0 800px;
+      }
+      100% {
+        background-position: 800px 0;
+      }
+    }
 
 /* Mobile Style */
 
